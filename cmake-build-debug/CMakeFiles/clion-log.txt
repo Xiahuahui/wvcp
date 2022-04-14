@@ -1,0 +1,4 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/local/Cellar/gcc/11.2.0_3/bin/gcc-11 -DCMAKE_CXX_COMPILER=/usr/local/Cellar/gcc/11.2.0_3/bin/g++-11 -G "CodeBlocks - Unix Makefiles" /Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug

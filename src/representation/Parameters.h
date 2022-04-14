@@ -3,6 +3,7 @@
 #include <chrono>
 #include <string>
 #include <vector>
+#include <memory>
 
 #include "enum_types.h"
 

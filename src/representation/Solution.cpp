@@ -1,8 +1,9 @@
 #include "Solution.h"
-
+#include <iostream>
 #include <algorithm>
 #include <cassert>
 #include <numeric>
+#include <vector>
 
 #include "../utils/random_generator.h"
 #include "../utils/utils.h"
@@ -228,12 +229,23 @@ bool Solution::check_solution() const {
 }
 
 [[nodiscard]] std::string Solution::line_csv() const {
-    return fmt::format("{},{},{},{}",
-                       _non_empty_colors.size(),
-                       _penalty,
-                       _score_wvcp,
-                       fmt::join(_colors, ":"));
+//    return fmt::format("{},{},{},{}",
+//                       _non_empty_colors.size(),
+//                       _penalty,
+//                       _score_wvcp,
+//                       fmt::join(_colors, ":"));
+    //TODO!!!
+   // 指向元素最后一个位置的后一个位置
+    for (int i = 0; i < this->_colors.size(); ++i) {
+        std::cout << this->_colors[i]<<":";
+
+    }
+    std::cout<<std::endl;
+    std::cout<<"_score_wvcp"<<_score_wvcp <<std::endl;
+
+    return "we";
 }
+
 
 [[nodiscard]] const std::vector<int> &Solution::colors() const {
     return _colors;

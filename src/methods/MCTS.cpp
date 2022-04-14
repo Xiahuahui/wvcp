@@ -37,7 +37,8 @@ MCTS::MCTS()
     const auto next_possible_actions{next_possible_moves(_base_solution)};
     _root_node = std::make_shared<Node>(nullptr, next_moves[0], next_possible_actions);
 
-    fmt::print(Parameters::p->output, "{}", header_csv());
+//    fmt::print(Parameters::p->output, "{}", header_csv());
+    //TODO
 }
 
 bool MCTS::stop_condition() const {
@@ -80,12 +81,14 @@ void MCTS::run() {
             _t_best = std::chrono::high_resolution_clock::now();
             Solution::best_score_wvcp = score_wvcp;
             _best_solution = _current_solution;
-            fmt::print(Parameters::p->output, "{}", line_csv());
+//            fmt::print(Parameters::p->output, "{}", line_csv());
+            //TODO
             _root_node->clean_graph(_best_solution.best_score_wvcp);
         }
         ++_turn;
     }
-    fmt::print(Parameters::p->output, "{}", line_csv());
+//    fmt::print(Parameters::p->output, "{}", line_csv());
+    //TODO
 }
 
 void MCTS::selection() {
@@ -117,24 +120,27 @@ void MCTS::expansion() {
 }
 
 [[nodiscard]] const std::string MCTS::header_csv() const {
-    return fmt::format("date,method,instance,{},turn,time,depth,nb total node,nb "
-                       "current node,height,{}\n",
-                       Parameters::p->header_csv,
-                       Solution::header_csv);
+//    return fmt::format("date,method,instance,{},turn,time,depth,nb total node,nb "
+//                       "current node,height,{}\n",
+//                       Parameters::p->header_csv,
+//                       Solution::header_csv);
+//TODO
+return "";
 }
 
 [[nodiscard]] const std::string MCTS::line_csv() const {
-    return fmt::format("{},mcts,{},{},{},{},{},{},{},{},{}\n",
-                       get_date_str(),
-                       Graph::g->name,
-                       Parameters::p->line_csv,
-                       _turn,
-                       Parameters::p->elapsed_time(_t_best),
-                       _current_node->get_depth(),
-                       Node::get_total_nodes(),
-                       Node::get_nb_current_nodes(),
-                       Node::get_height(),
-                       _best_solution.line_csv());
+//    return fmt::format("{},mcts,{},{},{},{},{},{},{},{},{}\n",
+//                       get_date_str(),
+//                       Graph::g->name,
+//                       Parameters::p->line_csv,
+//                       _turn,
+//                       Parameters::p->elapsed_time(_t_best),
+//                       _current_node->get_depth(),
+//                       Node::get_total_nodes(),
+//                       Node::get_nb_current_nodes(),
+//                       Node::get_height(),
+//                       _best_solution.line_csv());
+    return "";
 }
 
 std::vector<Action> next_possible_moves(const Solution &solution) {

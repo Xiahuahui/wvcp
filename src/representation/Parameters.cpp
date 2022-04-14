@@ -1,6 +1,7 @@
 #include "Parameters.h"
 
 #include <cstdio>
+#include <memory>
 
 std::unique_ptr<Parameters> Parameters::p = nullptr;
 
@@ -36,35 +37,58 @@ Parameters::Parameters(const std::string &problem,
     if (method == "local_search") {
         header_csv = "problem,time_limit,rand_seed,target,initialization,"
                      "nb_iter_local_search,max_time_local_search";
-        line_csv = fmt::format("{},{},{},{},{},{},{}",
-                               problem,
-                               time_limit,
-                               rand_seed,
-                               target,
-                               initialization_str_,
-                               nb_iter_local_search,
-                               max_time_local_search);
+//        line_csv = fmt::format("{},{},{},{},{},{},{}",
+//                               problem,
+//                               time_limit,
+//                               rand_seed,
+//                               target,
+//                               initialization_str_,
+//                               nb_iter_local_search,
+//                               max_time_local_search);
+        line_csv = "fmt::format({},{},{},{},{},{},{},\n"
+                   "                               problem,\n"
+                   "                               time_limit,\n"
+                   "                               rand_seed,\n"
+                   "                               target,\n"
+                   "                               initialization_str_,\n"
+                   "                               nb_iter_local_search,\n"
+                   "                               max_time_local_search)";
+        //TODO
     } else if (method == "mcts") {
         header_csv = "problem,time_limit,rand_seed,"
                      "target,nb_max_iterations,nb_iter_local_search,"
                      "max_time_local_search,initialization,simulation,"
                      "coeff_exploi_explo,local_search";
-        line_csv = fmt::format("{},{},{},{},{},{},{},{},{},{},{}",
-                               problem,
-                               time_limit,
-                               rand_seed,
-                               target,
-                               nb_max_iterations,
-                               nb_iter_local_search,
-                               max_time_local_search,
-                               initialization_str_,
-                               simulation_,
-                               coeff_exploi_explo,
-                               local_search_str_);
+//        line_csv = fmt::format("{},{},{},{},{},{},{},{},{},{},{}",
+//                               problem,
+//                               time_limit,
+//                               rand_seed,
+//                               target,
+//                               nb_max_iterations,
+//                               nb_iter_local_search,
+//                               max_time_local_search,
+//                               initialization_str_,
+//                               simulation_,
+//                               coeff_exploi_explo,
+//                               local_search_str_);
+        line_csv = "fmt::format(\"{},{},{},{},{},{},{},{},{},{},{}\",\n"
+                   "                               problem,\n"
+                   "                               time_limit,\n"
+                   "                               rand_seed,\n"
+                   "                               target,\n"
+                   "                               nb_max_iterations,\n"
+                   "                               nb_iter_local_search,\n"
+                   "                               max_time_local_search,\n"
+                   "                               initialization_str_,\n"
+                   "                               simulation_,\n"
+                   "                               coeff_exploi_explo,\n"
+                   "                               local_search_str_)";
+        //TODO
     } else {
-        fmt::print(stderr,
-                   "Unknown method, please select : "
-                   "local_search, mcts\n");
+//        fmt::print(stderr,
+//                   "Unknown method, please select : "
+//                   "local_search, mcts\n");
+        //TODO
         exit(1);
     }
 }
@@ -74,8 +98,9 @@ void Parameters::end_search() const {
         std::fflush(output);
         std::fclose(output);
         if (std::rename((output_file + ".running").c_str(), output_file.c_str()) != 0) {
-            fmt::print(
-                stderr, "error while changing name of output file {}\n", output_file);
+//            fmt::print(
+//                stderr, "error while changing name of output file {}\n", output_file);
+        //TODO
             exit(1);
         }
     }

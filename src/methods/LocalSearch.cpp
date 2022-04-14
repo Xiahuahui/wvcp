@@ -1,5 +1,5 @@
 #include "LocalSearch.h"
-
+#include <iostream>
 #include "../utils/utils.h"
 #include "afisa.h"
 #include "afisa_original.h"
@@ -17,29 +17,38 @@ LocalSearch::LocalSearch()
 }
 
 void LocalSearch::run() {
-    fmt::print(Parameters::p->output, "{}", header_csv());
-    fmt::print(Parameters::p->output, "{}", line_csv());
+    //TODO
+//      std::cout << Parameters::p->output << std::endl;
+//    fmt::print(Parameters::p->output, "{}", header_csv());
+//    fmt::print(Parameters::p->output, "{}", line_csv());
+
     if (_local_search_function) {
         _local_search_function(_best_solution, true);
     }
 }
 
 [[nodiscard]] const std::string LocalSearch::header_csv() const {
-    return fmt::format("date,method,instance,{},turn,time,{}\n",
-                       Parameters::p->header_csv,
-                       Solution::header_csv);
+//    return fmt::format("date,method,instance,{},turn,time,{}\n",
+//                       Parameters::p->header_csv,
+//                       Solution::header_csv);
+      //TODO
+
+      return "";
+
 }
 
 [[nodiscard]] const std::string LocalSearch::line_csv() const {
-    return fmt::format(
-        "{},{},{},{},{},{},{}\n",
-        get_date_str(),
-        Parameters::p->local_search_str,
-        Graph::g->name,
-        Parameters::p->line_csv,
-        0, // turn,
-        Parameters::p->elapsed_time(std::chrono::high_resolution_clock::now()),
-        _best_solution.line_csv());
+//    return fmt::format(
+//        "{},{},{},{},{},{},{}\n",
+//        get_date_str(),
+//        Parameters::p->local_search_str,
+//        Graph::g->name,
+//        Parameters::p->line_csv,
+//        0, // turn,
+//        Parameters::p->elapsed_time(std::chrono::high_resolution_clock::now()),
+//        _best_solution.line_csv());
+    //TODO
+    return "";
 }
 
 local_search_ptr get_local_search_fct(const Local_search &local_search) {

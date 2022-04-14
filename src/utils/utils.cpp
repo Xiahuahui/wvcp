@@ -1,8 +1,9 @@
 #include "utils.h"
-
+#include <iostream>
 #include <ctime>
 #include <iomanip>
 #include <sstream>
+#include "../test.h"
 
 std::vector<std::string> split_string(std::string to_split,
                                       const std::string &delimiter) {
@@ -26,13 +27,19 @@ std::string get_date_str() {
 void print_result_ls(const int64_t &best_time,
                      const Solution &solution,
                      const long &turn) {
-    fmt::print(Parameters::p->output,
-               "{},{},{},{},{},{},{}\n",
-               get_date_str(),
-               Parameters::p->local_search_str,
-               Graph::g->name,
-               Parameters::p->line_csv,
-               turn,
-               best_time,
-               solution.line_csv());
+//    fmt::print(Parameters::p->output,
+//               "{},{},{},{},{},{},{}\n",
+//               get_date_str(),
+//               Parameters::p->local_search_str,
+//               Graph::g->name,
+//               Parameters::p->line_csv,
+//               turn,
+//               best_time,
+//               solution.line_csv());
+     solution.line_csv();
+     for (int k=0;k<solution.colors().size();k++){
+         result_colors.push_back(solution.colors()[k]);
+     }
+
+     std :: cout <<"result" << std::endl;
 }

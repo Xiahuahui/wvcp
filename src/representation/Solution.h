@@ -257,6 +257,8 @@ class Solution {
     [[nodiscard]] const std::vector<std::vector<int>> &colors_weights() const;
 
     [[nodiscard]] const std::vector<std::vector<int>> &conflicts_colors() const;
+
+
 };
 
 /**

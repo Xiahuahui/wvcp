@@ -147,12 +147,14 @@ void Node::add_child_to_parent(const std::shared_ptr<Node> &child) {
 }
 
 std::string Node::format() const {
-    return fmt::format("Action v {} c {} visits {} score {} UCB {}\n",
-                       _move.vertex,
-                       _move.color,
-                       _visits,
-                       _score,
-                       _score_ucb);
+//    return fmt::format("Action v {} c {} visits {} score {} UCB {}\n",
+//                       _move.vertex,
+//                       _move.color,
+//                       _visits,
+//                       _score,
+//                       _score_ucb);
+    //TODO
+    return "";
     // if (not this->terminal()) {
     //     std::string txt;
     //     for (const auto &child : _children_nodes) {
@@ -182,7 +184,9 @@ std::string Node::to_dot() const {
         txt += "digraph G{\n";
     }
     for (const auto &child : _children_nodes) {
-        txt += fmt::format("\n\tn{} -> n{} ;", _id, child->_id);
+//        txt += fmt::format("\n\tn{} -> n{} ;", _id, child->_id);
+          //TODO
+          txt += "";
         // txt += fmt::format("\n\tn{} [label=\"n{}-s{:.0f}-v{}\"];",
         //                    child->id,
         //                    child->id,

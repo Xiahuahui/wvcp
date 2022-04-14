@@ -18,9 +18,10 @@ Initialization string_to_initialization(const std::string &initialization) {
     } else if (initialization == "deterministic") {
         return Initialization::deterministic;
     }
-    fmt::print(stderr,
-               "Unknown initialization, please select : "
-               "random, constrained, deterministic\n");
+//    fmt::print(stderr,
+//               "Unknown initialization, please select : "
+//               "random, constrained, deterministic\n");
+    //TODO
     exit(1);
 }
 
@@ -42,10 +43,11 @@ Local_search string_to_local_search(const std::string &local_search) {
     } else if (local_search == "ilsts") {
         return Local_search::ilsts;
     }
-    fmt::print(stderr,
-               "Unknown local_search, please select : "
-               "none, hill_climbing, tabu_col, tabu_weight, "
-               "afisa, afisa_original, redls, ilsts\n");
+//    fmt::print(stderr,
+//               "Unknown local_search, please select : "
+//               "none, hill_climbing, tabu_col, tabu_weight, "
+//               "afisa, afisa_original, redls, ilsts\n");
+    //TODO
     exit(1);
 }
 

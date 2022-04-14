@@ -1,6 +1,7 @@
 #include "redls.h"
 
 #include <cassert>
+#include <iostream>
 
 #include "../utils/random_generator.h"
 #include "../utils/utils.h"
@@ -17,6 +18,7 @@ void redls(Solution &best_solution, const bool verbose) {
     while (not Parameters::p->time_limit_reached_sub_method(max_time) and
            turn < Parameters::p->nb_iter_local_search and
            best_solution.score_wvcp() != Parameters::p->target) {
+//        std::cout << "迭代的次数turn"<< turn<< std::endl;
         ++turn;
         // Step 1 RedLS: ligne 4 - 11 algo 3
         if (solution.penalty() == 0) {

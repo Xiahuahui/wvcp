@@ -7,8 +7,8 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_ARCH_FLAGS} -O0 -g -isystem dir -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2")
 set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_ARCH_FLAGS} -O3 -DNDEBUG -Wall -s -isystem dir -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -Wformat=2")
 
-add_executable(${CMAKE_PROJECT_NAME}
-        src/main.cpp
+add_library(${CMAKE_PROJECT_NAME}
+        src/test.cpp src/test.h
         # utils
         src/utils/random_generator.cpp src/utils/random_generator.h
         src/utils/utils.cpp src/utils/utils.h
@@ -58,17 +58,17 @@ endif()
 
 include(${CPM_DOWNLOAD_LOCATION})
 
-CPMAddPackage(
-  GITHUB_REPOSITORY jarro2783/cxxopts
-  VERSION 2.2.1
-  OPTIONS "CXXOPTS_BUILD_EXAMPLES NO" "CXXOPTS_BUILD_TESTS NO" "CXXOPTS_ENABLE_INSTALL YES"
-)
+#CPMAddPackage(
+#  GITHUB_REPOSITORY jarro2783/cxxopts
+#  VERSION 2.2.1
+#  OPTIONS "CXXOPTS_BUILD_EXAMPLES NO" "CXXOPTS_BUILD_TESTS NO" "CXXOPTS_ENABLE_INSTALL YES"
+#)
 
-CPMAddPackage(
-  NAME fmt
-  GIT_TAG 8.0.0
-  GITHUB_REPOSITORY fmtlib/fmt
-)
+#CPMAddPackage(
+#  NAME fmt
+#  GIT_TAG 8.0.0
+#  GITHUB_REPOSITORY fmtlib/fmt
+#)
 
 # link dependencies
-target_link_libraries(${CMAKE_PROJECT_NAME} fmt cxxopts)
+#target_link_libraries(${CMAKE_PROJECT_NAME} cxxopts)

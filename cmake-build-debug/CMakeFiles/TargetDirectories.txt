@@ -1,0 +1,3 @@
+/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/CMakeFiles/gc_wvcp.dir

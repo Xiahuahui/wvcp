@@ -1,6 +1,7 @@
 #include "ProxiSolutionILSTS.h"
 
 #include <cassert>
+#include <algorithm>
 
 #include "../utils/random_generator.h"
 
@@ -199,8 +200,9 @@ void ProxiSolutionILSTS::perturb_vertices(const int force) {
         }
 
         add_to_color(vertex, color);
-        std::random_shuffle(unassigned.begin(), unassigned.end());
-
+//        std::random_shuffle(unassigned.begin(), unassigned.end());
+        //TODO 也许是版本问题？？
+        std::shuffle(unassigned.begin(), unassigned.end(), std::mt19937(std::random_device()()));
         std::vector<int> to_random;
         // assigned without inceasing score
         for (const int &v : unassigned) {

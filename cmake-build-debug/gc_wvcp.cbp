@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="gc_wvcp"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gc_wvcp">
+				<Option output="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/libgc_wvcp.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/Makefile&quot;  VERBOSE=1 gc_wvcp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gc_wvcp/fast">
+				<Option output="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/libgc_wvcp.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/Makefile&quot;  VERBOSE=1 gc_wvcp/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/methods/LocalSearch.cpp">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/methods/LocalSearch.h">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/methods/MCTS.cpp">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/methods/MCTS.h">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/methods/afisa.cpp">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/methods/afisa.h">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/methods/afisa_original.cpp">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/methods/afisa_original.h">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/methods/greedy.cpp">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/methods/greedy.h">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/methods/hill_climbing.cpp">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/methods/hill_climbing.h">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/methods/ilsts.cpp">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/methods/ilsts.h">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/methods/redls.cpp">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/methods/redls.h">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/methods/tabu_col.cpp">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/methods/tabu_col.h">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/methods/tabu_weight.cpp">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/methods/tabu_weight.h">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/representation/Graph.cpp">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/representation/Graph.h">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/representation/Method.h">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/representation/Node.cpp">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/representation/Node.h">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/representation/Parameters.cpp">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/representation/Parameters.h">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/representation/ProxiSolutionILSTS.cpp">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/representation/ProxiSolutionILSTS.h">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/representation/ProxiSolutionRedLS.cpp">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/representation/ProxiSolutionRedLS.h">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/representation/Solution.cpp">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/representation/Solution.h">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/representation/enum_types.cpp">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/representation/enum_types.h">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/test.cpp">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/test.h">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/utils/random_generator.cpp">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/utils/random_generator.h">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/utils/utils.cpp">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/src/utils/utils.h">
+			<Option target="gc_wvcp"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/xiahuahui/go/src/github.com/tendermint/tendermint/abci/example/smallbank/gc_wvcp_mcts/cmake-build-debug/cmake/CPM_0.32.0.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
