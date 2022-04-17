@@ -36,10 +36,10 @@ void print_result_ls(const int64_t &best_time,
 //               turn,
 //               best_time,
 //               solution.line_csv());
-     solution.line_csv();
+//     solution.line_csv();
      for (int k=0;k<solution.colors().size();k++){
          result_colors.push_back(solution.colors()[k]);
      }
 
-     std :: cout <<"result" << std::endl;
+//     std :: cout << solution.score_wvcp() << std::endl;
 }

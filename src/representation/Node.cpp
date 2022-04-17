@@ -1,7 +1,7 @@
 #include "Node.h"
 
 #include <algorithm>
-#include <cmath>
+//#include <math>
 
 #include "Parameters.h"
 
@@ -59,7 +59,7 @@ void Node::update(const double &score) {
         int i{0};
         for (auto &child : _children_nodes) {
             child->_exploitation = ++i / sum_rank;
-            child->_exploration = std::sqrt(2 * std::log(_visits) / child->_visits);
+//            child->_exploration = std::sqrt(2 * std::log(_visits) / child->_visits);
             child->_score_ucb = child->_exploitation +
                                 Parameters::p->coeff_exploi_explo * child->_exploration;
         }

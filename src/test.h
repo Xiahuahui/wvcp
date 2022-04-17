@@ -6,7 +6,7 @@ extern "C"
 {
 #endif
 
-void test(int** info,int** edges_list,int** weight_list,int** colors);
+void test(int** info,int** edges_list,int** weight_list,int** colors,int** para_list);
 #ifdef __cplusplus
 }
 #endif

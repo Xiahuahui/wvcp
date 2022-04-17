@@ -236,12 +236,12 @@ bool Solution::check_solution() const {
 //                       fmt::join(_colors, ":"));
     //TODO!!!
    // 指向元素最后一个位置的后一个位置
-    for (int i = 0; i < this->_colors.size(); ++i) {
-        std::cout << this->_colors[i]<<":";
-
-    }
-    std::cout<<std::endl;
-    std::cout<<"_score_wvcp"<<_score_wvcp <<std::endl;
+//    for (int i = 0; i < this->_colors.size(); ++i) {
+//        std::cout << this->_colors[i]<<":";
+//
+//    }
+//    std::cout<<std::endl;
+//    std::cout<<"_score_wvcp"<<_score_wvcp <<std::endl;
 
     return "we";
 }

@@ -35,7 +35,7 @@ void signal_handler(int signum);
  * @param argv : list of arguments
  * @return std::shared_ptr<Method>
  */
-std::shared_ptr<Method> parse(int** info,int** edges_list,int** weight_list);
+std::shared_ptr<Method> parse(int** info,int** edges_list,int** weight_list,int** para_list);
 
 //int main( int argc,const char **argv){
 //    std::cout << "argc" << argc << argv<<std::endl;
@@ -45,25 +45,20 @@ std::shared_ptr<Method> parse(int** info,int** edges_list,int** weight_list);
 
 
 
-void test(int** info,int** edges_list,int** weight_list, int** colors){
-    std::cout <<"lasted1"<< std::endl;
+void test(int** info,int** edges_list,int** weight_list, int** colors,int** para_list){
+//    std::cout <<"lasted"<< std::endl;
 
 
     // see src/utils/parsing.cpp for default parameters
     // Get the method
-//    int* m = (int*)list_data;
-//    for(int i=0; i<leng; i++)
-//    {
-//        std::cout << m[i] << std::endl;
-//    }
     //    char test_mid[10000];
     //    std::sprintf(test_mid,
     //                 "\nunknown problem %s\nselect : wvcp, gcp","erer");
     //    std::cout << test_mid;
     //    int argc=0;
     //    const char **argv;
-    auto method(parse(info,edges_list,weight_list));
-    std::cout << "解析结束"<< std::endl;
+    auto method(parse(info,edges_list,weight_list,para_list));
+//    std::cout << "解析结束"<< std::endl;
     // Set the signal handler to stop the search
     signal(SIGTERM, signal_handler);
     signal(SIGINT, signal_handler);
@@ -73,15 +68,15 @@ void test(int** info,int** edges_list,int** weight_list, int** colors){
     Parameters::p->end_search();
     int* m = (int*)colors;
     for (int i=0;i<result_colors.size();i++){
-        std::cout <<"result_colors["<<i<<"]" <<result_colors[i]<<std::endl;
+//        std::cout <<"result_colors["<<i<<"]" <<result_colors[i]<<std::endl;
         m[i] = result_colors[i] ;
     }
     int result_lenght = result_colors.size();
     for (int i=0;i<result_lenght ;i++){
-        std::cout << "before result的长度" << result_colors.size() << std::endl;
+//        std::cout << "before result的长度" << result_colors.size() << std::endl;
         result_colors.pop_back();
     }
-    std::cout << "after result的长度" << result_colors.size() << std::endl;
+//    std::cout << "after result的长度" << result_colors.size() << std::endl;
 }
 
 void signal_handler(int signum) {
@@ -92,8 +87,8 @@ void signal_handler(int signum) {
     Parameters::p->time_stop = std::chrono::high_resolution_clock::now();
 }
 
-std::shared_ptr<Method> parse(int** info,int** edges_list,int** weight_list) {
-    std::cout<< "解析开始" << std::endl;
+std::shared_ptr<Method> parse(int** info,int** edges_list,int** weight_list,int** para_list) {
+//    std::cout<< "解析开始" << std::endl;
 //    // defaults values for parameters are located in representation/Parameter.cpp
 //
 //    // analyse command line options
@@ -322,17 +317,17 @@ std::shared_ptr<Method> parse(int** info,int** edges_list,int** weight_list) {
 //        std::cout << result["nb_max_iterations"].as<long>()<<std::endl;
 //        std::cout << <<std::endl;
 //        std::cout << max_time_local_search <<std::endl;
-
+        int* m5 = (int*)para_list;
         Parameters::init_parameters(
             std::make_unique<Parameters>("wvcp",
                                          "local_search",
-                                         9,
+                                         m5[0],
                                          std::stoi(std::to_string(time(nullptr))),
                                          9,
                                          std::numeric_limits<long>::max(),
                                          "deterministic",
-                                         std::numeric_limits<long>::max(),
-                                         4,
+                                         m5[1],
+                                         m5[2],
                                          "redls",
                                          "greedy",
                                          1));
