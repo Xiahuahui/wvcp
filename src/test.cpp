@@ -47,7 +47,9 @@ std::shared_ptr<Method> parse(int** info,int** edges_list,int** weight_list,int*
 
 void test(int** info,int** edges_list,int** weight_list, int** colors,int** para_list){
 //    std::cout <<"lasted"<< std::endl;
-
+//    int* m66     = (int*)info;
+//    std::cout << "节点数"<< m66[0] << std::endl;
+//    std::cout <<"边数" << m66[1] << std::endl;
 
     // see src/utils/parsing.cpp for default parameters
     // Get the method
@@ -318,6 +320,7 @@ std::shared_ptr<Method> parse(int** info,int** edges_list,int** weight_list,int*
 //        std::cout << <<std::endl;
 //        std::cout << max_time_local_search <<std::endl;
         int* m5 = (int*)para_list;
+//        std::cout <<"m5[0]" << m5[0]<<"m5[1]" <<m5[1] <<"m5[2] "<<m5[2] <<std::endl;
         Parameters::init_parameters(
             std::make_unique<Parameters>("wvcp",
                                          "local_search",
